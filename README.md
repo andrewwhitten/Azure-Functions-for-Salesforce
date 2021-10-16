@@ -4,12 +4,13 @@ This project was driven by the desire to extend Salesforce with functions for us
 
 Advantages of using Microsoft Azure functions with Salesforce are:
 
-1 Available for trial on demand
-2 Public pricing on website
-3 Mature cloud platform
-4 Decoupling
+
+# Available for trial on demand
+# Public pricing on website
+# Mature cloud platform
+# Decoupling
 
 Notes
 
 * This is built in .NET 6 preview, just because the framework is planned for release this November 2021, and the performance aspects will be important for potential comparisons with other providers such as Amazon AWS and Google.
-* The generation of 
+* There is a very specific bug when generating the .NET wrapper around the Salesforce Partner API. The simple solution is here: https://stackoverflow.com/questions/60976792/net-core-3-1-soap-platform-not-supported-error-compiling-jscript-csharp-script
