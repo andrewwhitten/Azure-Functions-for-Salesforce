@@ -71,13 +71,13 @@ Comparing Microsoft Azure functions with Salesforce you can see multiple benefit
 
 # Pre-requisites
 
-* Salesforce Developer account (free)
-* Microsoft Visual Studio 2022 Community Edition - Preview (free)
-* Microsoft Azure account (free)
+* Salesforce Developer account (free) - https://developer.salesforce.com/signup
+* Microsoft Visual Studio 2022 Community Edition - Preview (free) - https://visualstudio.microsoft.com/vs/preview/
+* Microsoft Azure account (free) - https://azure.microsoft.com/en-us/free/ 
 
 # Optional
 
-* Postman (or similar API tool)
+* Postman (or similar API tool) - https://www.postman.com/
 
 # Setup Steps
 
@@ -90,4 +90,5 @@ Comparing Microsoft Azure functions with Salesforce you can see multiple benefit
 
 * This is built in .NET 6 preview, just because the framework is planned for release this November 2021, and the performance aspects will be important for potential comparisons with other providers such as Amazon AWS and Google.
 * There is a very specific bug when generating the .NET wrapper around the Salesforce Partner API. The simple fix is here: https://stackoverflow.com/questions/60976792/net-core-3-1-soap-platform-not-supported-error-compiling-jscript-csharp-script
+* I built this all on Windows 11. It should be possible on Mac OS with the same tools.
 
