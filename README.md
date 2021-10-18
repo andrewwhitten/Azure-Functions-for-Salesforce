@@ -38,7 +38,7 @@ Comparing Microsoft Azure functions with Salesforce you can see multiple benefit
         </tr>
         <tr>
           <td>Usage</td>
-          <td>Functions restricted to Salesforce platform (probably)</td>
+          <td>Salesforce Functions can likely be invoked from anywhere (TBC)</td>
           <td>Azure Functions can be invoked from anywhere</td>
           <td>It could be an advantage with Azure to abstract your functions from the Salesforce platform and reuse them elsewhere.</td>
         </tr>
