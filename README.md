@@ -79,7 +79,14 @@ Comparing Microsoft Azure functions with Salesforce you can see multiple benefit
 
 * Postman (or similar API tool)
 
-#Notes
+# Setup Steps
+
+* Publish Function solution to Azure 
+* Ensure the following Appliction Configuration settings for your Salesforce org are set:
+
+<img width="913" alt="Screen Shot 2021-10-18 at 9 09 54 pm" src="https://user-images.githubusercontent.com/41508645/137711965-eb006a91-bb97-4331-be8c-6b3a3cf6196c.png">
+
+# Notes
 
 * This is built in .NET 6 preview, just because the framework is planned for release this November 2021, and the performance aspects will be important for potential comparisons with other providers such as Amazon AWS and Google.
 * There is a very specific bug when generating the .NET wrapper around the Salesforce Partner API. The simple fix is here: https://stackoverflow.com/questions/60976792/net-core-3-1-soap-platform-not-supported-error-compiling-jscript-csharp-script
