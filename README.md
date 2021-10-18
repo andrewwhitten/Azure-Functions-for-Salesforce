@@ -13,7 +13,7 @@ Comparing Microsoft Azure functions with Salesforce you can see multiple benefit
         <tr>
           <th>Area</th>
           <th>Salesforce Functions (Winter '22)</th>
-          <th>Azure Functions (4.x)</th>
+          <th>Microsoft Azure Functions (4.x)</th>
           <th>Comments</th>
         </tr>
     </thead>
