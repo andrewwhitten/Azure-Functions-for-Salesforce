@@ -65,7 +65,7 @@ Comparing Microsoft Azure functions with Salesforce you can see multiple benefit
         <tr>
           <td>Platform maturity</td>
           <td>GA in 2021</td>
-          <td>GA in 2007 - on version 4</td>
+          <td>GA in 2017 - on version 4</td>
           <td>Microsoft functions is now quite a mature product, and the </td>
         </tr>
     </tbody>
