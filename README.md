@@ -1,4 +1,4 @@
-# Azure-Functions-for-Salesforce
+# Microsoft-Azure-Functions-for-Salesforce
 
 This project was driven by the desire to extend Salesforce with scalable functions for use cases that the platform Apex language is generally too limited for. Salesforce did release a  Functions framework in Winter '22, however I was unfortunately not able to get access. Microsoft on the other hand provides free trial to most Azure services just by signing up, and with clear pricing as well. So why wait?
 
