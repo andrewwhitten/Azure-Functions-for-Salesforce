@@ -2,15 +2,15 @@
 
 This project was driven by the desire to extend Salesforce with functions for use cases that the platform Apex language is generally too limited for. Salesforce did release a similar Functions framework in Winter '22, however I was unfortunately unable to get access. Microsoft on the other hand provides free trial to most Azure services just by signing up, and fairly clear pricing as well. So why wait?
 
-Comparing Microsoft Azure functions with Salesforce you can see multiple:
+Comparing Microsoft Azure functions with Salesforce you can see multiple benefits that are worth considering:
 
 
 <table>
     <thead>
         <tr>
           <th>Area</th>
-          <th>Salesforce Functions</th>
-          <th>Azure Functions (4.x</th>
+          <th>Salesforce Functions (Winter '22)</th>
+          <th>Azure Functions (4.x)</th>
           <th>Comments</th>
         </tr>
     </thead>
@@ -44,6 +44,12 @@ Comparing Microsoft Azure functions with Salesforce you can see multiple:
           <td>Java, Typescript/Javascript</td>
           <td>C#, F#, Python, Java, Typescript/Javascript, Powershell</td>
           <td>Azure offers the widest range of options</td>
+        </tr>
+        <tr>
+          <td>Skills</td>
+          <td>New technology in the Salesforce suite, but training will be targeted at existing Salesforce developers</td>
+          <td>Developers will need to pickup new Microsoft Azure skills.</td>
+          <td>Salesforce has the advantage of having everything on one vendor platform.</td>
         </tr>
         <tr>
           <td>Salesforce API</td>
