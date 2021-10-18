@@ -69,6 +69,15 @@ Comparing Microsoft Azure functions with Salesforce you can see multiple benefit
     </tbody>
 </table>
 
+# Pre-requisites
+
+* Salesforce Developer account (free)
+* Microsoft Visual Studio 2022 Community Edition - Preview (free)
+* Microsoft Azure account (free)
+
+# Optional
+
+* Postman (or similar API tool)
 
 #Notes
 
