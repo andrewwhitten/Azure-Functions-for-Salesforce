@@ -2,32 +2,19 @@
 
 This project was driven by the desire to extend Salesforce with functions for use cases that the platform Apex language is generally too limited for. Salesforce did release a similar Functions framework in Winter '22, however I was unfortunately unable to get access. Microsoft on the other hand provides free trial to most Azure services just by signing up, and fairly clear pricing as well. So why wait?
 
-Advantages of using Microsoft Azure functions with Salesforce are:
+Comparing Microsoft Azure functions with Salesforce you can see multiple:
 
-
-* Available for trial on demand
-* Public pricing on website
-* Mature cloud platform
-* Decoupling
-
-Notes
-
-* This is built in .NET 6 preview, just because the framework is planned for release this November 2021, and the performance aspects will be important for potential comparisons with other providers such as Amazon AWS and Google.
-* There is a very specific bug when generating the .NET wrapper around the Salesforce Partner API. The simple fix is here: https://stackoverflow.com/questions/60976792/net-core-3-1-soap-platform-not-supported-error-compiling-jscript-csharp-script
 
 <table>
     <thead>
         <tr>
-            <th colspan="2">The table header</th>
+          <th>Area</th>
+          <th>Salesforce Functions</th>
+          <th>Azure Functions (4.x</th>
+          <th>Comments</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-          <td>Area</td>
-          <td>Salesforce Functions</td>
-          <td>Azure Functions</td>
-          <td>Comment</td>
-        </tr>
         <tr>
           <td>Product access</td>
           <td>Contact your Account Executive</td>
@@ -35,9 +22,15 @@ Notes
           <td>You can use Microsoft Azure anytime. Salesforce requires an account level conversation.</td>
         </tr>
         <tr>
-          <td>Tools</td>
+          <td>Pricing</td>
+          <td>Unknown. Contact your Account Executive</td>
+          <td>Public calculator. First 1M executions free</td>
+          <td>Azure pricing is known to be quite low, and dedicated plans can also be discussed with Microsoft. No public pricing from Salesforce to compare to.                </td>
+        </tr>
+        <tr>
+          <td>Development Tools</td>
           <td>VS Code + Docker Desktop</td>
-          <td>VS Studio or VS Codes</td>
+          <td>VS Studio or VS Code</td>
           <td>Salesforce uses Docker Desktop for running Functions locally. This now requires licensing Docker for most customers.</td>
         </tr>
         <tr>
@@ -47,16 +40,29 @@ Notes
           <td>It could be an advantage with Azure to abstract your functions from the Salesforce platform and reuse them elsewhere.</td>
         </tr>
         <tr>
-          <td>Skills</td>
-          <td>Salesforce Functions</td>
-          <td>Azure Functions</td>
-          <td>Comment</td>
+          <td>Languages</td>
+          <td>Java, Typescript/Javascript</td>
+          <td>C#, F#, Python, Java, Typescript/Javascript, Powershell</td>
+          <td>Azure offers the widest range of options</td>
         </tr>
         <tr>
-          <td>API</td>
+          <td>Salesforce API</td>
           <td>Salesforce Functions have in-built platform API's</td>
           <td>Azure Functions can access Salesforce using the SOAP or REST API</td>
-          <td>Salesforce has the advantage</td>
+          <td>Salesforce has the advantage of having an API tightly integrated with the Salesforce platform</td>
+        </tr>
+        <tr>
+          <td>Platform maturity</td>
+          <td>GA in 2021</td>
+          <td>GA in 2007 - on version 4</td>
+          <td>Microsoft functions is now quite a mature product, and the </td>
         </tr>
     </tbody>
 </table>
+
+
+Notes
+
+* This is built in .NET 6 preview, just because the framework is planned for release this November 2021, and the performance aspects will be important for potential comparisons with other providers such as Amazon AWS and Google.
+* There is a very specific bug when generating the .NET wrapper around the Salesforce Partner API. The simple fix is here: https://stackoverflow.com/questions/60976792/net-core-3-1-soap-platform-not-supported-error-compiling-jscript-csharp-script
+
