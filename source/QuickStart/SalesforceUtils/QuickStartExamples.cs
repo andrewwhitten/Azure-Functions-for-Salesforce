@@ -1,6 +1,5 @@
 using System;
 using System.IO;
-using System.ServiceModel;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
@@ -16,20 +15,8 @@ namespace SalesforceUtils
     /// <summary>
     /// Quick Start example to enter an Account
     /// </summary>
-    public static class QuickStartExamples
+    public class QuickStartExamples : SalesforceFunctionBase
     {
-        // Initialize login parameters
-        private static String userName = Environment.GetEnvironmentVariable("sfdcUserName", EnvironmentVariableTarget.Process);
-        private static String password = Environment.GetEnvironmentVariable("sfdcPassword", EnvironmentVariableTarget.Process);
-        private static String securityToken = Environment.GetEnvironmentVariable("sfdcSecurityToken", EnvironmentVariableTarget.Process); 
-
-        private static SoapClient loginClient; // for login endpoint
-        private static SoapClient soapClient; // for API endpoint
-        private static SessionHeader header;
-        private static EndpointAddress endpoint;
-
-        private static loginRequest loginRequest;
-        private static loginResponse lresp;
 
         /// <summary>
         /// Representation of Salesforce Account object (not complete)
@@ -43,6 +30,12 @@ namespace SalesforceUtils
             public string website { get; set; }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="req"></param>
+        /// <param name="log"></param>
+        /// <returns></returns>
         [FunctionName("AddAccounts")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
@@ -91,6 +84,7 @@ namespace SalesforceUtils
             createResponse cresponse;
 
             String resultId = "";
+            String responseMessage = "";
 
             try
             {
@@ -100,78 +94,38 @@ namespace SalesforceUtils
 
                 if(saveResult != null && saveResult.Length > 0)
                 {
-                    resultId = saveResult[0].id;
+                    SaveResult firstSaveResult = saveResult[0];
+
+                    if (firstSaveResult.success)
+                    {
+                        resultId = firstSaveResult.id;
+
+                        responseMessage = $"Salesforce Account {resultId} created successfully.";
+                    }
+                    else
+                    {
+                        // If the operation failed, do we know why?
+                        if (firstSaveResult.errors.Length > 0)
+                        {
+                            responseMessage = firstSaveResult.errors[0].message;
+                        }
+                        else
+                        {
+                            responseMessage = $"Unknown error when creating Account";
+                        }
+                    }
                 }
             }
             catch (Exception ex) 
             { 
                 Console.WriteLine(ex.ToString()); 
+                responseMessage = $"Unknown error when creating Account";
             }
-
-            // Response message
-            string responseMessage = string.IsNullOrEmpty(resultId)
-                ? "Salesforce Account not created successfully."
-                : $"Salesforce Account {resultId} created successfully.";
 
             log.LogInformation(responseMessage);
 
             return new OkObjectResult(responseMessage);
         }
 
-        /// <summary>
-        /// Utility method to initialize both SoapClient objects
-        /// </summary>
-        /// <returns></returns>
-        private static async Task<bool> InitializeClients()
-        {
-            bool success = false;
-
-            var binding = new BasicHttpBinding(BasicHttpSecurityMode.Transport);
-            var loginAddress = new EndpointAddress(string.Format("https://login.salesforce.com/services/Soap/c/{0:f1}", 53.0));
-
-            loginClient = new SoapClient(binding, loginAddress);
-
-            lresp = await SfLogin();
-
-            if (lresp.result.passwordExpired)
-            {
-                Console.WriteLine("An error has occurred. Your password has expired.");
-            }
-
-            // On successful login, cache session info and API endpoint info
-            endpoint = new EndpointAddress(lresp.result.serverUrl);
-
-            header = new SessionHeader();
-            header.sessionId = lresp.result.sessionId;
-
-            // Create and cache an API endpoint client
-            soapClient = new SoapClient(binding, endpoint);
-
-            return success;
-        }
-
-        /// <summary>
-        /// Login to Salesforce
-        /// </summary>
-        /// <returns>Login Response</returns>
-        static async Task<loginResponse> SfLogin()
-        {
-
-            loginResponse lr = null;
-
-            try
-            {
-                LoginScopeHeader loginScopeHeader = new LoginScopeHeader();
-                loginRequest = new loginRequest(loginScopeHeader, userName, password + securityToken);
-                lr = await loginClient.loginAsync(loginRequest);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.StackTrace);
-            }
-
-
-            return lr;
-        }
     }
 }
