@@ -1,6 +1,6 @@
 # Microsoft-Azure-Functions-for-Salesforce
 
-This project was driven by the desire to extend Salesforce with scalable functions for use cases that the platform Apex language is generally too limited for. Salesforce did release a  Functions framework in Winter '22, however I was unfortunately not able to get access. Microsoft on the other hand provides free trial to most Azure services just by signing up, and with clear pricing as well. So why wait?
+This project was driven by the desire to extend Salesforce with scalable functions for use cases that the platform Apex language are generally too limited for. Salesforce did release a  Functions framework in Winter '22, however access to the product is not available. Microsoft on the other hand provides free trial to most Azure services just by signing up, and with clear pricing as well. So why wait?
 
 This is the Quickstart Salesforce Function walkthrough which you can deploy to Azure and insert an Account into Salesforce. This project will be regulary updated with new utilities than leverage the benefits of Functions in Salesforce:
 
@@ -13,7 +13,7 @@ Comparing Microsoft Azure functions with Salesforce you can see multiple benefit
         <tr>
           <th>Area</th>
           <th>Salesforce Functions (Winter '22)</th>
-          <th>Azure Functions (4.x)</th>
+          <th>Microsoft Azure Functions (4.x)</th>
           <th>Comments</th>
         </tr>
     </thead>
@@ -38,7 +38,7 @@ Comparing Microsoft Azure functions with Salesforce you can see multiple benefit
         </tr>
         <tr>
           <td>Usage</td>
-          <td>Functions restricted to Salesforce platform (probably)</td>
+          <td>Salesforce Functions can likely be invoked from anywhere (TBC)</td>
           <td>Azure Functions can be invoked from anywhere</td>
           <td>It could be an advantage with Azure to abstract your functions from the Salesforce platform and reuse them elsewhere.</td>
         </tr>
