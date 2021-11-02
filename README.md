@@ -1,6 +1,10 @@
 # Microsoft-Azure-Functions-for-Salesforce
 
-This project was driven by the desire to extend Salesforce with scalable functions for use cases that the platform Apex language are generally too limited for. Salesforce did release a  Functions framework in Winter '22, however access to the product is not available. Microsoft on the other hand provides free trial to most Azure services just by signing up, and with clear pricing as well. So why wait?
+This project was driven by the desire to extend Salesforce with scalable functions for use cases that the platform Apex language are generally too limited for. 
+
+![func](https://user-images.githubusercontent.com/41508645/139773892-aedc919d-cacd-4887-ad3c-1a384a38f353.png)
+
+Salesforce did release a  Functions framework in Winter '22, however access to the product is not available. Microsoft on the other hand provides free trial to most Azure services just by signing up, and with clear pricing as well. 
 
 This is the Quickstart Salesforce Function walkthrough which you can deploy to Azure and:
 
