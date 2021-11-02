@@ -2,7 +2,12 @@
 
 This project was driven by the desire to extend Salesforce with scalable functions for use cases that the platform Apex language are generally too limited for. Salesforce did release a  Functions framework in Winter '22, however access to the product is not available. Microsoft on the other hand provides free trial to most Azure services just by signing up, and with clear pricing as well. So why wait?
 
-This is the Quickstart Salesforce Function walkthrough which you can deploy to Azure and insert an Account into Salesforce. This project will be regulary updated with new utilities than leverage the benefits of Functions in Salesforce:
+This is the Quickstart Salesforce Function walkthrough which you can deploy to Azure and:
+
+* Insert an Account into Salesforce. 
+* Check if a PDF file in Salesforce is password protected
+
+This project will be regulary updated with new utilities than leverage the benefits of Functions in Salesforce:
 
 <img width="962" alt="Screen Shot 2021-10-18 at 8 16 58 pm" src="https://user-images.githubusercontent.com/41508645/137705068-33accd28-32b2-4c92-9062-f82d94ab8e5c.png">
 
