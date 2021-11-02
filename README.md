@@ -4,7 +4,7 @@ This project was driven by the desire to extend Salesforce with scalable functio
 
 ![func](https://user-images.githubusercontent.com/41508645/139773892-aedc919d-cacd-4887-ad3c-1a384a38f353.png)
 
-Salesforce did release a  Functions framework in Winter '22, however access to the product is not available. Microsoft on the other hand provides free trial to most Azure services just by signing up, and with clear pricing as well. 
+Salesforce has releaseed a <A href="https://developer.salesforce.com/docs/platform/functions/overview">Functions framework in Winter '22</A>, however access to the product is difficult. Microsoft on the other hand provides free trial to most Azure services just by signing up, and with clear pricing as well. 
 
 This is the Quickstart Salesforce Function walkthrough which you can deploy to Azure and:
 
