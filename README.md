@@ -75,6 +75,7 @@ Comparing Microsoft Azure functions with Salesforce you can see multiple benefit
             <td> 6MB (12 MB in some circumstances)</td>
             <td> 1GB </td>
             <td> 1.5GB (other plans can go up to 14GB) </td>
+            <td> If your compute functions really need more than 1GB of memory, then you need to consider another option. I would imagine increasing this ammount is on the Salesforce roadmap. </td>
         <tr>
           <td>Salesforce API</td>
            <td>Built in</td>
