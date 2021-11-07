@@ -37,14 +37,14 @@ Comparing Microsoft Azure functions with Salesforce you can see multiple benefit
         </tr>
         <tr>
           <td>Pricing</td>
-          <td>Product access</td>
-          <td>Unknown. Contact your Account Executive</td>
+          <td>None (included with Salesforce ecept for most basic editions)</td>
+          <td>Public pricing is USD $2,000 per org per month for 235k API calls, with increments of $45 for additional capacity on top of that.</td>
           <td>Public calculator. First 1M executions free</td>
-          <td>Azure pricing is known to be quite low, and dedicated plans can also be discussed with Microsoft. No public pricing from Salesforce to compare to.                </td>
+          <td>This is a very difficult comparison, and needs more investigation. On the face of it Azure is much cheaper, however you will also need to consider OPEX costs in maintaining it as well.</td>
         </tr>
         <tr>
           <td>Development Tools</td>
-          <tf>VS Code or Developer Console</td>
+          <td>VS Code or Developer Console</td>
           <td>VS Code + Docker Desktop</td>
           <td>VS Studio or VS Code</td>
           <td>Salesforce uses Docker Desktop for running Functions locally. This now requires licensing Docker for most customers.</td>
