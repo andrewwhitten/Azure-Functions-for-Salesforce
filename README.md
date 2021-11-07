@@ -21,6 +21,7 @@ Comparing Microsoft Azure functions with Salesforce you can see multiple benefit
     <thead>
         <tr>
           <th>Area</th>
+           <th>Salesforce APEX</th>
           <th>Salesforce Functions (Winter '22)</th>
           <th>Microsoft Azure Functions (4.x)</th>
           <th>Comments</th>
@@ -29,48 +30,61 @@ Comparing Microsoft Azure functions with Salesforce you can see multiple benefit
     <tbody>
         <tr>
           <td>Product access</td>
+          <td>Part of free Salesforce Developer Org</td>
           <td>Contact your Account Executive</td>
           <td>Signup online anytime</td>
           <td>You can use Microsoft Azure anytime. Salesforce requires an account level conversation.</td>
         </tr>
         <tr>
           <td>Pricing</td>
+          <td>Product access</td>
           <td>Unknown. Contact your Account Executive</td>
           <td>Public calculator. First 1M executions free</td>
           <td>Azure pricing is known to be quite low, and dedicated plans can also be discussed with Microsoft. No public pricing from Salesforce to compare to.                </td>
         </tr>
         <tr>
           <td>Development Tools</td>
+          <tf>VS Code or Developer Console</td>
           <td>VS Code + Docker Desktop</td>
           <td>VS Studio or VS Code</td>
           <td>Salesforce uses Docker Desktop for running Functions locally. This now requires licensing Docker for most customers.</td>
         </tr>
         <tr>
           <td>Usage</td>
+          <td>Anywhere</td>
           <td>Salesforce Functions can likely be invoked from anywhere (TBC)</td>
           <td>Azure Functions can be invoked from anywhere</td>
           <td>It could be an advantage with Azure to abstract your functions from the Salesforce platform and reuse them elsewhere.</td>
         </tr>
         <tr>
           <td>Languages</td>
+          <td>Apex ('Java-like')
           <td>Java, Typescript/Javascript</td>
           <td>C#, F#, Python, Java, Typescript/Javascript, Powershell</td>
           <td>Azure offers the widest range of options</td>
         </tr>
         <tr>
           <td>Skills</td>
+          <td>Simple Java knowledge</td
           <td>New technology in the Salesforce suite, but training will be targeted at existing Salesforce developers</td>
           <td>Developers will need to pickup new Microsoft Azure skills.</td>
           <td>Salesforce has the advantage of having everything on one vendor platform. It is challenging to find for Salesforce developers with Microsoft Azure skills.</td>
         </tr>
         <tr>
+            <td>Memory limit</td>
+            <td> 6MB (12 MB in some circumstances)</td>
+            <td> 1GB </td>
+            <td> 1.5GB (other plans can go up to 14GB) </td>
+        <tr>
           <td>Salesforce API</td>
+           <td>Built in</td>
           <td>Salesforce Functions have in-built platform API's</td>
           <td>Azure Functions can access Salesforce using the SOAP or REST API</td>
           <td>Salesforce has the advantage of having an API tightly integrated with the Salesforce platform</td>
         </tr>
         <tr>
           <td>Platform maturity</td>
+          <td>GA 2006, and reliably used ever since</td>
           <td>GA in 2021 - Winter '22</td>
           <td>GA in 2017 - on version 4</td>
           <td>Microsoft functions is now quite a mature product, and Enterprise ready.</td>
