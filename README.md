@@ -22,25 +22,25 @@ Comparing Microsoft Azure functions with Salesforce you can see multiple benefit
         <tr>
           <th>Area</th>
            <th>Salesforce APEX</th>
-          <th>Salesforce Functions (Winter '22)</th>
+          <th><strike>Salesforce Functions</strike> No longer available</th>
           <th>Microsoft Azure Functions (4.x)</th>
           <th>Comments</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-          <td>Product access</td>
-          <td>Part of free Salesforce Developer Org</td>
-          <td>Contact your Account Executive</td>
-          <td>Signup online anytime</td>
-          <td>You can use Microsoft Azure anytime. Salesforce requires an account level conversation.</td>
+          <td><strike>Product access</strike></td>
+          <td><strike>Part of free Salesforce Developer Org</strike></td>
+          <td><strike>Contact your Account Executive</strike></td>
+          <td><strike>Signup online anytime</strike></td>
+          <td><strike>You can use Microsoft Azure anytime. Salesforce requires an account level conversation.</strike></td>
         </tr>
         <tr>
           <td>Pricing</td>
-          <td>None (included with Salesforce ecept for most basic editions)</td>
-          <td>Public pricing is USD $2,000 per org per month for 235k API calls, with increments of $45 for additional capacity on top of that.</td>
-          <td>Public calculator. First 1M executions free. Salesforce API calls will cost extra if you exceed your standard limit.</td>
-          <td>This is a very difficult comparison, and needs more investigation. On the face of it Azure is much cheaper, however you will also need to consider OPEX costs in maintaining it as well and current Salesforce API usage as well. For significant API usage then Salesforce Functions may well work out cheaper.</td>
+          <td><strike>None (included with Salesforce ecept for most basic editions)</strike></td>
+          <td><strike>Public pricing is USD $2,000 per org per month for 235k API calls, with increments of $45 for additional capacity on top of that.</strike></td>
+          <td><strike>Public calculator. First 1M executions free. Salesforce API calls will cost extra if you exceed your standard limit.</strike></td>
+          <td><strike>This is a very difficult comparison, and needs more investigation. On the face of it Azure is much cheaper, however you will also need to consider OPEX costs in maintaining it as well and current Salesforce API usage as well. For significant API usage then Salesforce Functions may well work out cheaper.</strike></td>
         </tr>
         <tr>
           <td>Development Tools</td>
@@ -52,7 +52,7 @@ Comparing Microsoft Azure functions with Salesforce you can see multiple benefit
         <tr>
           <td>Usage</td>
           <td>Anywhere</td>
-          <td>Salesforce Functions can likely be invoked from anywhere (TBC)</td>
+          <td><strike>Salesforce Functions can likely be invoked from anywhere</strike></td>
           <td>Azure Functions can be invoked from anywhere</td>
           <td>It could be an advantage with Azure to abstract your functions from the Salesforce platform and reuse them elsewhere.</td>
         </tr>
